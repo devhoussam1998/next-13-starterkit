@@ -1,0 +1,74 @@
+.navbar {
+  --#{$prefix}navbar-bg: #{$navbar-light-bg};
+  --#{$prefix}navbar-border-bottom-width: #{$navbar-light-border-bottom-width};
+  --#{$prefix}navbar-border-bottom-style: #{$navbar-light-border-bottom-style};
+  --#{$prefix}navbar-border-bottom-color: #{$navbar-light-border-bottom-color};
+  --#{$prefix}navbar-toggler-bg: #{$navbar-light-toggler-bg};
+  --#{$prefix}navbar-toggler-hover-bg: #{$navbar-light-toggler-hover-bg};
+  --#{$prefix}navbar-toggler-icon-hover-bg: #{escape-svg(
+      $navbar-light-toggler-icon-hover-bg
+    )};
+  --#{$prefix}navbar-toggler-border-width: #{$navbar-light-toggler-border-width};
+  --#{$prefix}navbar-toggler-border-style: #{$navbar-light-toggler-border-style};
+  --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
+  --#{$prefix}navbar-toggler-hover-border-color: #{$navbar-light-toggler-hover-border-color};
+  background-color: var(--#{$prefix}navbar-bg);
+  border-bottom: var(--#{$prefix}navbar-border-bottom-width)
+    var(--#{$prefix}navbar-border-bottom-style)
+    var(--#{$prefix}navbar-border-bottom-color);
+}
+
+.navbar-toggler {
+  background-color: var(--#{$prefix}navbar-toggler-bg);
+  border: var(--#{$prefix}navbar-toggler-border-width)
+    var(--#{$prefix}navbar-toggler-border-style)
+    var(--#{$prefix}navbar-toggler-border-color);
+  &:hover {
+    background-color: var(--#{$prefix}navbar-toggler-hover-bg);
+    border-color: var(--#{$prefix}navbar-toggler-hover-border-color);
+    .navbar-toggler-icon {
+      background-image: var(--#{$prefix}navbar-toggler-icon-hover-bg);
+    }
+  }
+}
+
+@include color-mode(dark) {
+  .navbar {
+    --#{$prefix}navbar-bg: #{$navbar-dark-bg};
+    --#{$prefix}navbar-border-bottom-width: #{$navbar-dark-border-bottom-width};
+    --#{$prefix}navbar-border-bottom-style: #{$navbar-dark-border-bottom-style};
+    --#{$prefix}navbar-border-bottom-color: #{$navbar-dark-border-bottom-color};
+    --#{$prefix}navbar-color: #{$navbar-dark-color};
+    --#{$prefix}navbar-hover-color: #{$navbar-dark-hover-color};
+    --#{$prefix}navbar-disabled-color: #{$navbar-dark-disabled-color};
+    --#{$prefix}navbar-active-color: #{$navbar-dark-active-color};
+    --#{$prefix}navbar-brand-color: #{$navbar-dark-brand-color};
+    --#{$prefix}navbar-brand-hover-color: #{$navbar-dark-brand-hover-color};
+    --#{$prefix}navbar-toggler-bg: #{$navbar-dark-toggler-bg};
+    --#{$prefix}navbar-toggler-hover-bg: #{$navbar-dark-toggler-hover-bg};
+    --#{$prefix}navbar-toggler-icon-hover-bg: #{escape-svg(
+        $navbar-dark-toggler-icon-hover-bg
+      )};
+    --#{$prefix}navbar-toggler-border-width: #{$navbar-dark-toggler-border-width};
+    --#{$prefix}navbar-toggler-border-style: #{$navbar-dark-toggler-border-style};
+    --#{$prefix}navbar-toggler-border-color: #{$navbar-dark-toggler-border-color};
+    --#{$prefix}navbar-toggler-hover-border-color: #{$navbar-dark-toggler-hover-border-color};
+    background-color: var(--#{$prefix}navbar-bg);
+    border-bottom: var(--#{$prefix}navbar-border-bottom-width)
+      var(--#{$prefix}navbar-border-bottom-style)
+      var(--#{$prefix}navbar-border-bottom-color);
+  }
+  .navbar-toggler {
+    background-color: var(--#{$prefix}navbar-toggler-bg);
+    border: var(--#{$prefix}navbar-toggler-border-width)
+      var(--#{$prefix}navbar-toggler-border-style)
+      var(--#{$prefix}navbar-toggler-border-color);
+    &:hover {
+      background-color: var(--#{$prefix}navbar-toggler-hover-bg);
+      border-color: var(--#{$prefix}navbar-toggler-hover-border-color);
+      .navbar-toggler-icon {
+        background-image: var(--#{$prefix}navbar-toggler-icon-hover-bg);
+      }
+    }
+  }
+}

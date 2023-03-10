@@ -1,0 +1,11 @@
+// Custom variables for the `[data-bs-theme="dark"]` theme
+
+$white: #ffffff !default;
+$dark: #111827 !default;
+$primary: #3d5af1 !default;
+$body-color-dark: $white !default;
+$body-bg-dark: #0f172a !default;
+$border-color-dark: #1f2937 !default;
+$light-bg-subtle-dark: $dark !default;
+$link-color-dark: $primary !default;
+$link-hover-color-dark: shift-color($primary, 20%) !default;

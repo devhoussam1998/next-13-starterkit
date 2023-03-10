@@ -1,0 +1,126 @@
+// Variables Dark
+
+@import './variables-dark';
+
+// Variables
+
+// Color system
+
+$white: #ffffff !default;
+$dark: #111827 !default;
+$primary: #3d5af1 !default;
+$light-bg-subtle: $white !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color: #0f172a !default;
+$body-bg: $white !default;
+
+// Components
+
+$border-color: #f1f5f9 !default;
+
+// Typography
+
+$font-family-base: 'Inter', 'Cairo', sans-serif !default;
+
+// Prefix for :root CSS variables
+
+$prefix: bs- !default;
+
+// Links
+
+$link-decoration: none !default;
+
+// Navbar
+
+$navbar-padding-y: 1rem !default;
+$navbar-brand-margin-end: 0 !default;
+$navbar-toggler-border-radius: 0.5rem !default;
+$navbar-toggler-focus-width: 0 !default;
+$navbar-toggler-transition: all 0.15s ease-in-out !default;
+
+// Light
+
+$navbar-light-bg: $white !default;
+$navbar-light-border-bottom-width: 0.0625rem !default;
+$navbar-light-border-bottom-style: solid !default;
+$navbar-light-border-bottom-color: $border-color !default;
+$navbar-light-color: $body-color !default;
+$navbar-light-hover-color: $primary !default;
+$navbar-light-active-color: $primary !default;
+$navbar-light-disabled-color: rgba($primary, 0.5) !default;
+$navbar-light-toggler-icon-color: $white !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-toggler-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-icon-hover-color: $primary !default;
+$navbar-light-toggler-icon-hover-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-toggler-icon-hover-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-bg: $primary !default;
+$navbar-light-toggler-hover-bg: transparent !default;
+$navbar-light-toggler-border-width: 0.125rem !default;
+$navbar-light-toggler-border-style: solid !default;
+$navbar-light-toggler-border-color: $primary !default;
+$navbar-light-toggler-hover-border-color: $primary !default;
+$navbar-light-brand-color: $body-color !default;
+$navbar-light-brand-hover-color: $navbar-light-active-color !default;
+
+// Dark
+
+$navbar-dark-bg: $dark !default;
+$navbar-dark-border-bottom-width: $navbar-light-border-bottom-width !default;
+$navbar-dark-border-bottom-style: $navbar-light-border-bottom-style !default;
+$navbar-dark-border-bottom-color: $border-color-dark !default;
+$navbar-dark-color: $body-color-dark !default;
+$navbar-dark-hover-color: $primary !default;
+$navbar-dark-active-color: $primary !default;
+$navbar-dark-disabled-color: rgba($primary, 0.5) !default;
+$navbar-dark-toggler-icon-color: $navbar-light-toggler-icon-color !default;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-toggler-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-icon-hover-color: $navbar-light-toggler-icon-hover-color !default;
+$navbar-dark-toggler-icon-hover-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-toggler-icon-hover-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-bg: $primary !default;
+$navbar-dark-toggler-hover-bg: $navbar-light-toggler-hover-bg !default;
+$navbar-dark-toggler-border-width: $navbar-light-toggler-border-width !default;
+$navbar-dark-toggler-border-style: $navbar-light-toggler-border-style !default;
+$navbar-dark-toggler-border-color: $primary !default;
+$navbar-dark-toggler-hover-border-color: $primary !default;
+$navbar-dark-brand-color: $body-color-dark !default;
+$navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
+
+// Dropdowns
+
+// Light
+
+$dropdown-color: $body-color !default;
+$dropdown-bg: $white !default;
+$dropdown-border-color: $border-color !default;
+$dropdown-divider-bg: $border-color !default;
+$dropdown-box-shadow: none !default;
+$dropdown-link-color: $body-color !default;
+$dropdown-link-hover-color: $white !default;
+$dropdown-link-hover-bg: shade-color($primary, 15%) !default;
+$dropdown-link-active-color: $white !default;
+$dropdown-link-active-bg: $primary !default;
+$dropdown-link-disabled-color: rgba($primary, 0.5) !default;
+$dropdown-header-color: $body-color !default;
+
+// Dark
+
+$dropdown-dark-color: $white !default;
+$dropdown-dark-bg: $dark !default;
+$dropdown-dark-border-color: $border-color-dark !default;
+$dropdown-dark-divider-bg: $border-color-dark !default;
+$dropdown-dark-box-shadow: none !default;
+$dropdown-dark-link-color: $white !default;
+$dropdown-dark-link-hover-color: $white !default;
+$dropdown-dark-link-hover-bg: tint-color($primary, 15%) !default;
+$dropdown-dark-link-active-color: $white !default;
+$dropdown-dark-link-active-bg: $primary !default;
+$dropdown-dark-link-disabled-color: rgba($primary, 0.5) !default;
+$dropdown-dark-header-color: $white !default;
+
+// Buttons
+
+$btn-border-width: 0.125rem !default;
+$btn-link-disabled-color: rgba($primary, 0.5) !default;
